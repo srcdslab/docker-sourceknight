@@ -5,7 +5,7 @@ ARG SOURCEKNIGHT_VERSION
 
 RUN apt update && apt install git jq -y --no-install-recommends
 
-RUN pip install git+https://github.com/maxime1907/sourceknight@fixrequirements yq
+RUN pip install git+https://github.com/maxime1907/sourceknight yq
 
 COPY "entrypoint.sh" "/entrypoint.sh"
 
