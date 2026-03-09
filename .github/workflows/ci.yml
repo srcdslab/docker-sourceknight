@@ -68,7 +68,7 @@ jobs:
             suffix=${{ matrix.context.suffix }}
 
       - name: Build Docker image
-        uses: docker/build-push-action@v6
+        uses: docker/build-push-action@v7
         with:
           context: ${{ matrix.context.name }}
           push: ${{ github.event_name != 'pull_request' }}
